@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background: #f7f1e3; */
+  background-color: #fff;
+  background-size: cover;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Hina Mincho', serif;
+  color: rgb(68, 58, 58);
+}
+
+header {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  width: 65%;
+  /* max-width: 1100px; */
+  /* background: #f8f5ef; */
+  background-image: url(../image/bd_main.png);
+  /* background-size: cover; */
+  background-size: contain;
+  padding: 40px;
+  border: 2px solid #2a3955;
+  /* border-radius: 12px; */
+  margin: 16px auto 0;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+main {
+  width: 50%;
+  /* background-color: #ef454a; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.person {
+  width: 50%;
+  /* background-color: aqua; */
+  /* margin-right: 50px; */
+}
+
+.person img {
+  width: 80%;
+  /* background-color: aqua; */
+}
+
+.panel {
+  /* width: 50%;
+  height: 100%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.panel img {
+  width: 110%;
+  margin-bottom: 48px;
+  /* background-color: #fff;
+  border-radius: 50%; */
+}
+
+.stop {
+  cursor: pointer;
+  width: 240px;
+  height: 48px;
+  background: #ef454a;
+  box-shadow: 0 4px 0 #d1483e;
+  border-radius: 24px;
+  line-height: 48px;
+  text-align: center;
+  font-size: 32px;
+  color: #fff;
+  user-select: none;
+}
+
+#spin {
+  cursor: pointer;
+  width: 320px;
+  height: 56px;
+  background: #3498db;
+  box-shadow: 0 4px 0 #2880b9;
+  border-radius: 28px;
+  line-height: 56px;
+  text-align: center;
+  color: #fff;
+  user-select: none;
+  margin: 40px auto 48px;
+  font-size: 32px;
+}
+
+.unmatched {
+  opacity: 0.5;
+}
+
+.inactive {
+  opacity: 0.5;
+}
+
+.all {
+  display: flex;
+  flex-direction: column;
+  /* min-height: 100vh; */
+}
+
+footer {
+  width: 100%;
+  background-image: url(../image/bd_main.png);
+  background-size: contain;
+  background-color: #2a3955;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  color: #fff;
+  margin-top: auto;
+  letter-spacing: 2px;
+  font-family: 'Lato', sans-serif;
+}
+
+footer p {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+}
+
+.hd_space {
+  background-color: #2a3955;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.hd_space h1 {
+  color: #fff;
+  text-align: center;
+  padding: 24px 0;
+  letter-spacing: 3px;
+  font-weight: normal;
+  font-size: 32px;
+}
+
+.hd_tx {
+  text-align: center;
+  margin: 32px auto 16px;
+  padding: 0 16px;
+}
+
+.hd_tx p {
+  line-height: 32px;
+  letter-spacing: 2px;
+}
+
+.ft_txr {
+  width: 100%;
+  max-width: 1100px;
+  text-align: right;
+  margin: 0 auto 32px;
+}
+
+.ft_txr p {
+  display: inline-block;
+  text-align: left;
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: 1px;
+}
+
+.all_next {
+  width: 75%;
+  margin: auto;
+}
+
+@media (max-width: 1000px) {
+  .all_next {
+    width: 80%;
+  }
+
+  header {
+    width: 80%;
+  }
+
+  .panel img {
+    width: 95%;
+  }
+  
+  .stop {
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    line-height: 40px;
+    font-size: 24px;
+  }
+
+  #spin {
+    cursor: pointer;
+    width: 250px;
+    height: 48px;
+    border-radius: 24px;
+    line-height: 48px;
+    margin: 40px auto 48px;
+    font-size: 24px;
+  }
+
+  .hd_space h1 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .all_next {
+    width: 100%;
+  }
+
+  header {
+    width: 90%;
+  }
+
+  .panel img {
+    width: 105%;
+    margin-bottom: 32px;
+    /* background-color: #fff;
+    border-radius: 50%; */
+  }
+  
+  .stop {
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    line-height: 40px;
+    font-size: 24px;
+  }
+
+  #spin {
+    cursor: pointer;
+    width: 280px;
+    height: 48px;
+    border-radius: 24px;
+    line-height: 48px;
+    margin: 40px auto 48px;
+    font-size: 24px;
+  }
+
+  .ft_txr {
+    width: 100%;
+    text-align: left;
+    padding: 0 16px;
+  }
+
+  .hd_space h1 {
+    padding: 16px 0;
+    font-size: 20px;
+  }
+
+  .hd_tx p {
+    font-size: 14px;
+    line-height: 28px;
+}
+}
